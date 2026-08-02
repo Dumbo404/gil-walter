@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.kontakt-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px var(--dl-layout-space-twounits, 32px);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.kontakt-header {
+  margin-bottom: 40px;
+}
+
+.kontakt-navlink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.kontakt-title {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.15;
+}
+
+.kontakt-title:hover {
+  text-decoration: underline;
+}
+
+.kontakt-content {
+  flex: 1;
+  max-width: 650px;
+}
+
+/* Akkordeon-Styling */
+.kontakt-accordion {
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+
+/* Titel als interaktiver Button mit Hover-Unterstrich */
+.kontakt-section-title {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  line-height: 1.2;
+  display: inline-block;
+  list-style: none; /* Blendet den Standard-Pfeil im Browser aus */
+}
+
+/* Standard-Pfeil für Safari/Chrome/Firefox ausblenden */
+.kontakt-section-title::-webkit-details-marker {
+  display: none;
+}
+
+.kontakt-section-title:hover {
+  text-decoration: underline;
+}
+
+.kontakt-accordion-content {
+  margin-top: 12px;
+}
+
+/* Statische Überschrift (z. B. "Kontakt") */
+.kontakt-section-static {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.kontakt-text {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+/* Vergrößerter Abstand zwischen den Zeilen in den Akkordeons */
+.kontakt-accordion-content .kontakt-text {
+  margin-bottom: 12px;
+}
+
+/* Entfernt den überflüssigen Abstand unter dem letzten Akkordeon-Eintrag */
+.kontakt-accordion-content .kontakt-text:last-child {
+  margin-bottom: 0;
+}
+
+.kontakt-text a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.kontakt-text a:hover {
+  text-decoration: underline;
+}
+
+.kontakt-text .separator {
+  margin: 0 6px;
+}
+
+@media(max-width: 479px) {
+  .kontakt-container {
+    padding: 16px;
+  }
+}

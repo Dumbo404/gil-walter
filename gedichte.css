@@ -1,0 +1,203 @@
+@import url('./style.css');
+
+.gedichte-container1 {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #FFF;
+}
+ 
+.gedichte-thq-header-elm {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+}
+ 
+.gedichte-container2 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.gedichte-navlink {
+  display: contents;
+}
+ 
+/* Header "Gil Walter" */
+.gedichte-text1 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-top: var(--dl-layout-space-threeunits);
+  margin-left: var(--dl-layout-space-fourunits);
+  margin-right: var(--dl-layout-space-fourunits);
+  text-decoration: none;
+  color: inherit;
+}
+
+.gedichte-text1:hover {
+  text-decoration: underline;
+}
+ 
+/* Content / Bilderbereich */
+.gedichte-container3 {
+  width: 100%;
+  max-width: 1115px;
+  display: grid;
+  margin-left: var(--dl-layout-space-fourunits);
+  margin-top: var(--dl-layout-space-twounits);
+  margin-bottom: var(--dl-layout-space-threeunits);
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+ 
+.gedichte-container4 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+ 
+.gedichte-image1 {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  object-fit: cover;
+  text-decoration: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+ 
+.gedichte-container5 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  grid-row-start: 1;
+  grid-column-start: 2;
+}
+ 
+.gedichte-image2 {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  object-fit: cover;
+  text-decoration: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover-Effekt für die Bilder: Sanfter Zoom & angepasste Transparenz */
+.gedichte-image1:hover,
+.gedichte-image2:hover {
+  transform: scale(1.04);
+  opacity: 0.88;
+}
+ 
+/* Footer Bereich - Analog zur "Über mich"-Seite */
+.gedichte-thq-footer-elm {
+  width: 100%;
+  margin-top: auto;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: flex-start;
+}
+ 
+.gedichte-container6 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  margin-left: var(--dl-layout-space-fourunits);
+  flex-direction: column;
+  justify-content: flex-start;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 13px !important;
+  line-height: 1.4;
+}
+
+.gedichte-container6 p {
+  margin: 0 0 4px 0;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 13px !important;
+}
+
+.gedichte-container6 a {
+  color: inherit;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 13px !important;
+}
+
+.gedichte-container6 a:hover {
+  text-decoration: underline;
+}
+
+.gedichte-container6 .separator {
+  margin: 0 6px;
+  color: #000;
+}
+
+/* Floating Widget (falls genutzt) */
+.gedichte-link5 {
+  display: contents;
+}
+ 
+.gedichte-container7 {
+  right: 50px;
+  border: 1px solid #ffffff5c;
+  bottom: 30px;
+  display: flex;
+  z-index: 22;
+  position: fixed;
+  box-shadow: 5px 5px 10px 0px rgba(31, 31, 31, 0.4);
+  min-height: auto;
+  align-items: center;
+  padding-top: 8px;
+  padding-left: 12px;
+  border-radius: 8px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  backdrop-filter: blur(6px);
+  background-color: rgba(41, 41, 41, 0.41);
+}
+ 
+.gedichte-icon1 {
+  width: 24px;
+  margin-right: 4px;
+}
+ 
+.gedichte-text3 {
+  color: white;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+ 
+/* Responsive Anpassung für Mobilgeräte */
+@media(max-width: 767px) {
+  .gedichte-text1,
+  .gedichte-container6 {
+    margin-left: var(--dl-layout-space-twounits);
+  }
+
+  .gedichte-container3 {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 var(--dl-layout-space-twounits);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .gedichte-image1,
+  .gedichte-image2 {
+    max-width: 100%;
+  }
+}

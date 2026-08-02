@@ -1,0 +1,195 @@
+@import url('./style.css');
+
+.home-container1 {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.home-container3 {
+  flex: 1;
+  display: flex;
+  max-width: 1000px;
+  align-items: flex-start;
+  padding-left: var(--dl-space-space-twounits);
+  padding-right: var(--dl-space-space-twounits);
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+/* Linke Spalte / Sidebar */
+.home-container4 {
+  width: 320px;
+  display: flex;
+  position: sticky;
+  top: 40px;
+  align-self: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+
+.home-container2 {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  justify-content: flex-start;
+}
+
+.home-navlink1 {
+  display: contents;
+}
+
+/* "Gil Walter" Header */
+.home-text1 {
+  font-size: 20px;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Bild verkleinert – !important erzwungen gegen Überschreiben aus style.css */
+.home-image {
+  width: 280px !important;
+  height: auto !important;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.home-text2 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 4px;
+}
+
+.home-text3 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 12px;
+}
+
+/* LINKS / BUTTONS (Gedichte & Über mich) */
+.home-navlink2,
+.home-navlink3,
+.button {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  border: none !important;
+  outline: none !important;
+  background: none !important;
+  padding: 0 !important;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* HOVER-EFFEKT: Gedichte & Über mich */
+.home-navlink2:hover,
+.home-navlink3:hover,
+.button:hover {
+  text-decoration: underline !important;
+}
+
+.home-navlink2 {
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+.home-navlink3 {
+  display: inline-block;
+}
+
+/* INFOMATIONSBLOCK (Mail, Instagram, Zürich, Datenschutzerklärung) */
+.home-sidebar-info,
+.home-footer {
+  margin-top: 16px;
+  font-size: 13px !important;
+  line-height: 1.4;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.home-sidebar-info p,
+.home-footer p {
+  margin-bottom: 4px;
+  font-size: 13px !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.home-sidebar-info a,
+.home-footer a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 13px !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+/* HOVER-EFFEKT: Mail, Instagram & Datenschutzerklärung */
+.home-sidebar-info a:hover,
+.home-footer a:hover {
+  text-decoration: underline !important;
+}
+
+/* Rechte Spalte (Texte) */
+.home-container5 {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  padding-left: var(--dl-space-space-threeunits);
+  flex-direction: column;
+}
+
+.home-text4 {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: var(--dl-space-space-twounits);
+}
+
+.home-link10, .home-link14, .home-link16, .home-link18, .home-link20, .home-link22 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: var(--dl-space-space-unit);
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+
+.home-link13, .home-link15, .home-link17, .home-link19, .home-link21, .home-link23 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  margin-bottom: var(--dl-space-space-twounits);
+}
+
+/* Responsive Ansichten */
+@media(max-width: 767px) {
+  .home-container3 {
+    flex-direction: column;
+  }
+
+  .home-container4 {
+    width: 100%;
+    position: static;
+    margin-bottom: var(--dl-space-space-twounits);
+  }
+
+  .home-container5 {
+    padding-left: 0;
+  }
+}
+
+@media(max-width: 479px) {
+  .home-container3 {
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+  }
+
+  .home-image {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
