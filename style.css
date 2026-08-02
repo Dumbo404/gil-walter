@@ -414,6 +414,10 @@ h1, h2, h3, .thq-heading-1, .thq-heading-2, .thq-heading-3 {
 .thq-link:hover {
   background-position: 0 100%;
 }
+
+/* Make anchors clearly interactive across the site */
+a { cursor: pointer; }
+a:hover { text-decoration: underline !important; }
  
 .thq-grid-auto-300 {
   display: grid;
